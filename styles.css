@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.5vh;
+    width: 100vw;
+    border: 2px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    padding: 2px 0px 0px 5px;
+}
+
+.logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.search-and-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; /* Set your desired left margin here */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.navdata {
+    display: flex;
+    align-items: center;
+}
+
+.navdata a {
+    margin-left: 60px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.1s ease;
+}
+
+.navdata a:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.navdata a:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 2.5px;
+    width: 0px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.navdata a:hover:after {
+    width: 100px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.search-bar input[type="text"] {
+    margin-right:-2px;
+    padding: 5px;
+    height: 35px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.search-bar button[type="submit"] {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+}
+
+.search-bar img{
+    width: 35px;
+}
+
+.loc_set{
+    display: block;
+    padding: 10px 0px 0px 0px;
+}
+.loc_set a{
+    display: block;
+}
+
+@media screen and (max-width: 430px) {
+    .header {
+        height: 3.5vh;
+    }
+    .logo {
+        padding: 5px 0px 0px 5px;
+    }
+    .logo img {
+        height: 25px;
+        width: 50px;
+    }
+    .navdata {
+        padding: 5px 10px 0px 10px;
+    }
+
+    .navdata img {
+        width: 20px;
+    }
+    .navdata a {
+        margin-left: 10px;
+    }
+    .search-bar input[type="text"] {
+        margin-right:-2px;
+        padding: 5px;
+        height: 20px;
+        width: 200px;
+        border: 2px solid black;
+    }
+    
+    .search-bar button[type="submit"] {
+        padding: 0;
+        border: none;
+        background: none;
+        width: 35px;
+        height: 20px;
+        border: 2px solid black;
+    }
+    
+    .search-bar img{
+        width: 5px;
+        height: 18px;
+    }
+    
+}
