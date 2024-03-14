@@ -51,14 +51,13 @@ a {
 
 .navdata {
     position:relative;
-    width:35%;
+    width:30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navdata a {
-    margin-right: 5px;
     display: flex;
     align-items: center;
     position: relative;
@@ -91,7 +90,6 @@ a {
 .search-bar form {
     display: flex;
     align-items: center;
-    margin-right: 0px;
 }
 
 .search-bar input[type="text"] {
@@ -103,8 +101,6 @@ a {
 }
 
 .search-bar button[type="submit"] {
-    padding: 0;
-    border: none;
     background: none;
     width: 35px;
     height: 35px;
@@ -117,6 +113,7 @@ a {
 
 .loc_set {
     display: flex;
+    margin-left: 5%;
 }
 
 .loc_set a {
